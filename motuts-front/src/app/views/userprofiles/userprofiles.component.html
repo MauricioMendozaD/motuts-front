@@ -1,0 +1,16 @@
+<!-- div>{{ userProfiles | json }}</div -->
+<div>
+  <p-card header="User Profile" subheader="asdfffff" [style]="{'width': '360px', 'margin-top': '0.2em'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+      <img alt="card-image" src="https://www.primefaces.org/primeng/showcase/assets/showcase/images/usercard.png">
+    </ng-template>
+    <div>
+      <label>Nickname: </label> {{ userProfiles[0]?.nickname }}
+    </div>
+    <ng-template pTemplate="footer">
+      <p-button label="Editar" >
+        <fa-icon [icon]="faUserEdit" [style]="{'margin-right': '.3em'}"></fa-icon>
+      </p-button>
+    </ng-template>
+  </p-card>
+</div>
